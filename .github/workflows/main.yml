@@ -1,0 +1,21 @@
+name: My first cicd action  script
+
+on:
+  push: 
+    branches: main
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: my first step
+      run: |
+        echo "This is my first demo script"
+        uname -a
+        
+      
+    
